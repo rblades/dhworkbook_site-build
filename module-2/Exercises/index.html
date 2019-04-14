@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Shawn Graham">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Exercises - HIST3814o Crafting Digital History</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Exercises";
+    var mkdocs_page_input_path = "module-2/Exercises.md";
+    var mkdocs_page_url = "/module-2/Exercises/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> HIST3814o Crafting Digital History</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../introduction/crafting-digital-history/">Getting Started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">1. Open Access Research</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../module-1/Open-Access-Research/">Why you should be open</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../module-1/Exercises/">Exercises</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">2. Finding Data</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Finding Data/">How do we find data?</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Exercises</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#module-2-exercises">Module 2 Exercises</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#background">Background</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-1-the-dream-case">Exercise 1: The Dream Case</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-2-wget">Exercise 2: Wget</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-3-tei">Exercise 3: TEI</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-4-apis">Exercise 4: APIs</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-5-mining-twitter">Exercise 5: Mining Twitter</a></li>
+        
+            <li><a class="toctree-l4" href="#exercise-6-using-tesseract-to-turn-an-image-into-text">Exercise 6: Using Tesseract to turn an image into text</a></li>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">3. Fixing Data</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../module-3/Wrangling Data/">Data is messy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../module-3/Exercises/">Exercises</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">4. Analysis</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../module-4/Seeing Patterns/">Seeing Patterns</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../module-4/Exercises/">Exercises</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">5. Visualization</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../module-5/Humanities Visualization/">Communicating your Findings</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../module-5/Exercises/">Capstone Exercise</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../conclusion/Conclusion/">6. Final Thoughts</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Appendices</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/tei/">Text Encoding Initiative</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/git-rstudio/">Git in RStudio</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/regex/">Introduction to Regular Expressions (regex)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/regexex/">Regex & the Republic of Texas</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/open-refine/">Open Refine</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/ner/">Stanford Named Entity Recognizer</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/regex-ner/">Going further with regex</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/quick-intro-r/">Quick intro to R</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/cyoa.txt/">Choose Your Own Adventure</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/geoparsing-w-python.txt/">Geoparsing with Python</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/glitch/">Glitch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/gephi.txt/">Social Network Analysis with Gephi</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/graphing-the-net.txt/">Graphing the Net</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/topicmodel-r-dhbox/">Topic Modeling, DH Box</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/topicmodel-r-yourmachine/">Topic Modeling, Local</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/netviz/">Network visualization with igraph</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/inkscape/">Inkscape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/gh-pages/">GitHub Pages</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../supporting materials/leaflet.txt/">Leaflet</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">HIST3814o Crafting Digital History</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>2. Finding Data &raquo;</li>
+        
+      
+    
+    <li>Exercises</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/shawngraham/dhworkbook/tree/gh-pages/edit/master/docs/module-2/Exercises.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="module-2-exercises">Module 2 Exercises</h1>
+<p>All five exercises are on this page. Don't forget to scroll. If you have difficulties, or if the instructions need clarification, please click the 'issues' button and leave a note. Feel free to fork and improve these instructions, if you are so inclined. Remember, these exercises get progressively more difficult, and will require you to either download materials or read materials on other websites. Give yourself plenty of time. Try them all, and remember you can turn to your classmates for help. Work together!</p>
+<p><strong>DO NOT suffer in silence as you try these exercises! Annotate, ask for help, set up an appointment, or find me in person.</strong></p>
+<h2 id="background">Background</h2>
+<p>Where do we go to find data? Part of that problem is solved by knowing what question you are asking, and what <strong>kinds</strong> of data would help solve that question. Let's assume that you have a pretty good question you want an answer to &mdash; say, something concerning social and household history in early Ottawa, like what was the role of 'corner' stores (if such things exist?) in fostering a sense of neighbourhood &mdash; and begin thinking about how you'd find data to explore that question.</p>
+<p>The exercises in this module cover:</p>
+<ul>
+<li>The Dream Case</li>
+<li>Wget</li>
+<li>Writing a program to extract data from a webpage</li>
+<li>Encoding transcribed text</li>
+<li>Collecting data from Twitter</li>
+<li>Coverting images to text with Tesseract </li>
+</ul>
+<p>There is so much data available; with these methods, we can gather enormous amounts that will let us see large-scale macroscopic patterns. At the same time, it allows us to dive into the details with comparative ease. The thing is, not all digital data are created equally. Google has spent millions digitizing <strong>everything</strong>; newspapers have digitized their own collections. Genealogists and local historical societies upload yoinks of digitized photographs, wills, local tax records, <a href="http://www.bytown.net/">you-name-it</a>, <strong>every day</strong>. But, consider what Milligan has to say about <a href="http://ianmilligan.ca/2012/03/26/illusionary-order-cautionary-notes-for-online-newspapers/">'illusionary order'</a>:</p>
+<blockquote>
+<p>[...] poor and misunderstood use of online newspapers can skew historical research. In a conference presentation or a lecture, it’s not uknown to see the familiar yellow highlighting of found searchwords on projected images: indicative of how the original primary material was obtained. But this historical approach generally usually remains unspoken, without a critical methodological reflection. As I hope I’ll show here, using Pages of the Past uncritically for historical research is akin to using a volume of the Canadian Historical Review with 10% or so of the pages ripped out. Historians, journalists, policy researchers, genealogists, and amateur researchers need to at least have a basic understanding of what goes on behind the black box.</p>
+</blockquote>
+<p>Ask yourself: what are some of the key dangers? Reflect: how have you used digitized resources uncritically in the past? Remember: <strong>To digitize</strong> doesn't &mdash; or shouldn't &mdash; mean uploading a photograph of a document. There's a lot more going on than that. We'll get to that in a moment.</p>
+<hr />
+<h2 id="exercise-1-the-dream-case">Exercise 1: The Dream Case</h2>
+<p>In the dream case, your data are not just images, but are actually sorted and structured into some kind of pre-existing database. There are choices made in the <strong>creation</strong> of the database, but a good database, a good project, will lay out for you their decision making, their corpora, and how they've dealt with ambiguity and so on. You search using a robust interface, and you get a well-formed spreadsheet of data in return. Two examples of 'dream case' data:</p>
+<blockquote>
+<ul>
+<li><a href="http://edh-www.adw.uni-heidelberg.de/inschrift/suche">Epigraphic Database Heidelberg</a></li>
+<li><a href="https://www.cwgc.org/find/find-war-dead">Commwealth War Graves Commission, Find War Dead</a></li>
+</ul>
+</blockquote>
+<ol>
+<li>Explore both databases. Perform a search of interest to you. In the case of the epigraphic database, if you've done any Latin, try searching for terms related to occupations; or you could search <a href="http://www.latin-dictionary.org/Latin-English-Dictionary/figlina">Figlina</a>. </li>
+<li>In the CWGC database, search your own surname. Download your results. You now have data that you can explore! </li>
+<li>Using the Nano text editor in your DH Box, make a record (or records) of what you searched, the URL for your search and its results, and where you're keeping your data. </li>
+<li>Lodge a copy of this record in your repository.</li>
+</ol>
+<hr />
+<h2 id="exercise-2-wget">Exercise 2: Wget</h2>
+<p>You've already encountered wget in the introduction to this workbook, when you were setting up your DH Box to use Pandoc. </p>
+<ol>
+<li>
+<p>In this exercise, I want you to do <a href="http://programminghistorian.org/lessons/automated-downloading-with-wget">Ian Milligan's wget tutorial at the Programming Historian</a> to learn more about the power of this command, and how to wield that power properly. Skip ahead to step 2, since your DH Box already has wget installed. (If you want to continue to use wget after this course is over, you will have to install it on your own machine, obviously.)</p>
+<p>Once you've completed Milligan's tutorial, remember to put your history into a new Markdown file, and to lodge a copy of it in your repository.</p>
+<p>Now that you're <strong>au fait</strong> with wget, we will do part of <a href="https://programminghistorian.org/lessons/applied-archival-downloading-with-wget">Kellen Kurschinski's wget tutorial at the Programming Historian</a>. I want you to use wget to download the Library and Archives Canada <a href="http://collectionscanada.gc.ca/pam_archives/index.php?fuseaction=genitem.displayItem&amp;lang=eng&amp;rec_nbr=2005110&amp;rec_nbr_list=3366167,3203123,2005097,2005100,2005101,2005099,2005096,2005110,2005108,2005106">14th Canadian General Hospital war diaries</a> in a responsible and respectful manner. Otherwise, you will look like a bot attacking their site.</p>
+<p>The URLs of this diary go from <code>http://data2.archives.ca/e/e061/e001518029.jpg</code> to <code>http://data2.archives.ca/e/e061/e001518109.jpg</code>. This is a total of 80 pages &mdash; note the last part of the URL goes from <code>e001518029</code> to <code>e001518109</code> for a total of 80 images.</p>
+</li>
+<li>
+<p>Make a new directory: <code>$ mkdir war-diary</code> and then cd into it: <code>$ cd war-diary</code>. Make sure you're in the directory by typing <code>$ pwd</code>. </p>
+<p><strong>NB Make sure you are in your parent directory <code>~</code>. To get there directly from any subdirectory, type <code>$ cd ~</code>. If you want to check your file structure quickly, go to the File Manager.</strong></p>
+<p>We will use a simple Python script to gather all the URLs of the diary images from the Library and Archives. Python is a general purpose programming language.</p>
+</li>
+<li>
+<p>Type <code>$ nano urls.py</code> to open a new Python file called <code>urls</code>.</p>
+</li>
+<li>
+<p>Paste the script below. This script grabs the URLs from <code>e001518029</code> to <code>e001518110</code> and puts them in a file called <code>urls.txt</code>: </p>
+<pre><code>urls = '';
+f=open('urls.txt','w')
+for x in range(8029, 8110):
+    urls = 'http://data2.collectionscanada.ca/e/e061/e00151%d.jpg\n' % (x)
+    f.write(urls)
+f.close
+</code></pre>
+</li>
+<li>
+<p>Hit ctrl+x, Y, enter to save and exit Nano.</p>
+</li>
+<li>
+<p>Type <code>$ python urls.py</code> to run the Python script. </p>
+</li>
+<li>
+<p>Type <code>$ ls</code> and notice the <code>urls.txt</code> file.</p>
+</li>
+<li>
+<p>Type <code>$ nano urls.txt</code> to examine the file. Exit Nano.</p>
+</li>
+<li>
+<p>Type <code>$ wget -i urls.txt -r --no-parent -nd -w 2 --limit-rate=100k</code> to download all the URLs from the <code>urls.txt</code> file.</p>
+</li>
+<li>
+<p>Type <code>$ ls</code> to verify the files were downloaded.</p>
+</li>
+<li>
+<p>Add your command to your history file, and lodge it in your repository. For reference, visit <a href="../module-1/Exercises/#exercise-2-getting-familiar-with-dh-box">Module 1, Exercise 2</a>.</p>
+<p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zK172_9QcL8?rel=0" title="Using wget to download historical sources" frameborder="0" gesture="media" allowfullscreen></iframe>
+<br></p>
+</li>
+</ol>
+<p>In <a href="#exercise-6-using-tesseract-to-turn-an-image-into-text">Exercise 6</a>, we will open some of the text files in Nano to judge the 'object character recognition'. Part of the point of working with these files is to show that even with horrible 'digitization', we can still extract useful insights. Digitization is more than simply throwing automatically generated files online. Good digitization requires scholarly work and effort! We will learn how to do this properly in the next exercise.</p>
+<p>There's no one right way to do things, digitally. There are many paths. The crucial thing is that you find a way that makes sense for your own workflow, and that doesn't make you a drain on someone else's resources.</p>
+<hr />
+<h2 id="exercise-3-tei">Exercise 3: TEI</h2>
+<p>Digitization requires human intervention. This can be as straightforward as correcting errors or adjusting the scanner settings when we do OCR, or it can be the rather more involved work of adding a layer of semantic information to the text. When we mark up a text with the semantic hooks and signs that explain we are talking about <strong>London, Ontario</strong> rather than <strong>London, UK</strong>, we've made the text a whole lot more useful for other scholars or tools. In this exercise, you will do some basic marking up of a text using standards from the <a href="https://tei-c.org/">Text Encoding Initiative</a>. (Some of the earliest digital history work was along these lines). </p>
+<p>The TEI exercise requires careful attention to detail. Read through it before you try it. In this exercise, you'll transcribe a page from an abolitionist's pamphlet. You'll also think about ways of transforming the resulting XML into other formats. Make notes in a file to upload to your repository, and upload your XML and your XSL file to your own repository as well. (As an added optional challenge, create a gh-pages branch and figure out the direct URL to your XML file, and email that URL to me).</p>
+<p>For this exercise, do the following: </p>
+<ol>
+<li>The TEI exercise found <a href="../../supporting materials/tei/">in our supporting materials</a>.</li>
+</ol>
+<p>I will note that a perfectly fine option for the Capstone Exercise for HIST3814 might be to use this exercise as a model to markup the war diary and suggest ways this material might be explored. Remember to make (and lodge in your repository) a file detailing the work you've done and any issues you've run into.</p>
+<hr />
+<h2 id="exercise-4-apis">Exercise 4: APIs</h2>
+<p>Sometimes, a website will have what is called an <strong>Application Programming Interface</strong> or API. In essence, this lets a program on your computer talk to the computer serving the website you're interested in, such that the website gives you the data that you're looking for.</p>
+<p>That is, instead of <strong>you</strong> punching in the search terms, and copying and pasting the results, you get the computer to do it. More or less. The thing is, the results come back to you in a machine-readable format &mdash; often, JSON, which is a kind of text format. It looks like the following:</p>
+<p><img alt="Image showing JSON formating" src="http://i.imgur.com/LtZWyle.png" /></p>
+<p>This exercises uses an <a href="https://o-date.github.io/draft/book/using-application-programming-interfaces-apis-to-retrieve-data.html">O-Date Binder</a>.</p>
+<p>Launch the <a href="http://mybinder.org/v2/gh/o-date/open-context-jupyter/master">jupyter binder</a>. </p>
+<ol>
+<li>Open the 'Chronicling America API' notebook. Run through its various steps so that you end up with a json file of results. Imagine that you are writing a paper on the public reception of archaeology in the 19th century in the United States. Alter the notebook so that you can find primary source material for your study. <strong>Going further:</strong> Find another API for historical newspapers somewhere else in the world. Duplicate the notebook, and alter it to search this other API so that you can have material for a cross-cultural comparison.</li>
+<li>Open the 'Open Context API'. Notice how similar it is to the first notebook! Run through the steps so that you can see it work. Study the Open Context <a href="https://opencontext.org/about/services">API documentation</a>. Modify the search to return materials from a particular project or site.</li>
+<li>The final notebook, 'Open Context Measurements', is a much more complicated series of calls to the Open Context API (courtesy of Eric Kansa). In this notebook, we are searching for zoological data held in Open Context, using standardised vocabularies from that field that described faunal remains. Examine the code carefully - do you see a series of nested 'if' statements? Remember that data is often described using JSON attribute:value pairs. These can be nested within one another, like Russian dolls. This series of 'if' statements parses the data into these nested levels, looking for the faunal information. Open Context is using an <em>ontology</em> or formal description of categorization of the data (which you can visit <a href="https://opencontext.org/vocabularies/open-context-zooarch/">on the Open Context website</a>) that enables inter-operability with various Linked Open Data schemes. Run each section of the code. Do you see the section that defines how to make a plot? This code is called on later in the notebook, enabling us to plot the counts of the different kinds of faunal data. Try plotting different categories.</li>
+<li>The notebooks above were written in Python. We can also interact with APIs using the R statistical programming language. The <a href="http://finds.org.uk">Portable Antiquities Scheme database</a> also has an API. Launch this <a href="https://mybinder.org/v2/gh/o-date/notebooks-archdata/master">binder</a> and open the 'Retrieving Data from the Portable Antiquities Scheme Database' notebook (courtesy of Daniel Pett). This notebook is in two parts. The first frames a query and then writes the result to a csv file for you. Work out how to make the query search for medieval materials, and write a csv to keep more of the data fields.</li>
+<li>The second part of the notebook that interacts with the Portable Antiquities Scheme database uses that csv file to determine where the images for each item are located on the Scheme's servers, and to download them.</li>
+</ol>
+<p>Going further - the <a href="https://programminghistorian.org/">Programming Historian</a> has a lesson on <a href="https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask">creating a web API</a>. Follow that lesson and build a web api that serves some archaeological data that you've created or have access to. One idea might be to extend the <a href="https://msu-anthropology.github.io/daea/">Digital Atlas of Egyptian Archaeology</a>, a gazetteer created by <a href="http://leadr.msu.edu/projects/fall-2014-3/daea/">Anthropology undergraduates at Michigan State University</a>. The source data may be found <a href="https://github.com/msu-anthropology/daea/blob/master/sites-popup.csv">on the MSU Anthropology GitHub page</a>. </p>
+<hr />
+<h2 id="exercise-5-mining-twitter">Exercise 5: Mining Twitter</h2>
+<p>This exercise mines Twitter for tweets, photos, etc, connected to bad archaeology.</p>
+<p>You will require the following on your machine:</p>
+<ol>
+<li>Twitter account</li>
+<li>Python installed on your machine</li>
+</ol>
+<p>However, we will use a virtual computer that already has Python and the <code>Twarc</code> (TWitter ARChiver) package already installed. (Mac users: you <strong>do</strong> have python already on your machine; Windows users, you don't. So, to make life easier, I built you all a virtual computer. Read on, this will make sense.)</p>
+<p>Twarc was created by Ed Summers, who is heading a project called <a href="https://www.docnow.io/">Documenting the Now</a> to create the tools necessary to keep track of all the ways our media are disseminating (and distorting!) the truth. It's a rapid-response suite of tools to capture events as they happen.</p>
+<p>What we're going to do is set up some credentials with Twitter that give you access to the underlying data of the tweets. Then, the Twarc packages has a bunch of functions built in that lets you search and archive tweets.</p>
+<h3 id="setting-up-your-twitter-credentials">Setting up your Twitter Credentials</h3>
+<p><strong>WARNING &mdash; Update as of October 12, 2018:</strong> It seems that Twitter now requires some kind of developer authentication process now. So the instructions below might have extra steps. If that's the case, no problem &mdash; <a href="mailto:ShawnGraham@cunet.carleton.ca">email Dr Graham</a> for his consumer secret/key.</p>
+<p><strong>READ THROUGH FIRST, THEN START &mdash; If you do not want to set up a Twitter account/developer app page, skip to <a href="../Exercises/#part-two-firing-up-your-virtual-computer">Part Two: Firing Up Your Virtual Computer</a></strong></p>
+<ol>
+<li>
+<p>First of all, you need to set up a Twitter account. If you do not have a <a href="http://twitter.com">Twitter account</a>, sign-up, but make sure to minimize any personal information that is exposed. For instance, do not make your handle the same as your real name.</p>
+<ul>
+<li>
+<p>Turn off geolocation. Do not give your actual location in the profile.</p>
+</li>
+<li>
+<p>View the settings, and make sure all of the privacy settings are dialed down. For the time being, you do have to associate a cell phone number with your account. You can delete that once you've done the next step.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Go to the <a href="https://apps.twitter.com/">Twitter apps page - https://apps.twitter.com/</a> and click on 'New App'.</p>
+</li>
+<li>
+<p>On the New Application page, just give your app a name like <code>my-twarc</code> or similar. For the portion labelled 'Website', use my Crafting Digital History site URL, <code>site.craftingdigitalhistory.ca</code> (although for our purposes any website will do). You don’t need to fill in any of the rest of the fields.</p>
+</li>
+<li>
+<p>Continue on to the next page (tick off the box saying you’ve read the developer code of behaviour). This next page shows you all the details about your new application.</p>
+</li>
+<li>
+<p>Click on the tab labelled <code>Keys and Access Tokens</code>.</p>
+</li>
+<li>
+<p>Copy the 'Consumer Key (API Key)' (the consumer secret) to a text file.</p>
+</li>
+<li>
+<p>Click on the button labelled <code>Create Access Tokens</code> at the bottom of the page. This generates an access token and an access secret.</p>
+</li>
+<li>
+<p>Copy those to your text file and save it. <strong>Do not put this file in your repo or leave it online anywhere. Otherwise, a person can impersonate you!</strong></p>
+</li>
+</ol>
+<p><img alt="Image showing set-up for Twitter's Application settings" src="http://i.imgur.com/mM4hZNN.png" /></p>
+<h3 id="part-two-firing-up-your-virtual-computer">Part Two: Firing Up Your Virtual Computer</h3>
+<ol>
+<li>
+<p><strong>Right-click</strong> the following Binder link and select <code>Open in new tab</code>: <a href="https://mybinder.org/v2/gh/o-date/social-media-work/master"><img alt="Binder" src="https://mybinder.org/badge.svg" /></a></p>
+</li>
+<li>
+<p>Wait. It is setting up your new virtual computer. When it's loaded up, it will resembled the following image:
+<img alt="Image showing the jupyter layout, saying not to click the Quit or logout buttons, that clicking the jupyter logo will refresh the page, and that you can click the dropdown labelled New and select the Terminal" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539304640402-48607.png" /></p>
+</li>
+<li>
+<p>Click the 'New' button, and select 'Terminal'. You should see something resembling the following image:
+<img alt="Image showing the terminal in jupyter, saying to click the black area to make the window active" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539304810966-61987.png" /></p>
+</li>
+</ol>
+<p><strong>WARNING. You have to interact with the virtual computer &mdash; type a command, click on something &mdash; within ten minutes or it shuts down and you lose everything</strong>.</p>
+<p><strong>Pro tip:</strong> you can always type <code>$ pwd</code> into the terminal as a way of keeping the thing alive. This command Prints the Working Directory (ex. tells you what folder you're in).</p>
+<ol>
+<li>Type <code>$ twarc configure</code> into the terminal.</li>
+</ol>
+<p><img alt="Image showing the terminal in jupyter, saying to type twarc configure, hit enter, and then enter the consumer key from the Twitter app settings" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539304902569-2152.png" /></p>
+<p>And in the next screenshot, read the annotations from top to bottom:</p>
+<p><img alt="Image showing the terminal in jupyter, saying to enter the Consumer Key and Consumer secret and then to open the twitter API URL the terminal outputs" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539305146992-49673.png" /></p>
+<p>But where is this 'Displayed pin'? It's in the window in your browser where the 'Authenticate Twitter?' dialogue was displayed. Instead of the twitter page, the URL you gave way up in part one step 3 has now been loaded and the information you need is indicated with <code>oauth_token=</code>. You need the bit after the <code>=</code> sign.</p>
+<p><img alt="Image showing a browser where the secret API URL from the previous image was pasted, permitting you to authorize the app" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539305692926-702.png" /></p>
+<p>It will resemble something like <code>-bBafl42aabB...</code> etc., a long string of numbers and letters. Copy the entire string.</p>
+<p>Then paste it in:
+<img alt="Image showing the terminal in jupyter, saying that the app has been authorized and twarc is ready" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539305848359-8369.png" /></p>
+<p>And you're ready to data mine twitter!</p>
+<h3 id="part-three-find-some-stuff">Part Three: Find some stuff</h3>
+<p>On the <a href="https://github.com/DocNow/twarc">Twarc README page</a> there are examples of how to use Twarc to search for information.</p>
+<p>If you typed in <code>$ twarc search electricarchaeo</code> and hit return, the terminal window would fill with tweet metadata and data; it'd take about one or two minutes to run as I'm pretty active on twitter (watch <a href="https://screencast-o-matic.com/watch/cF6lVjY05K">a video of Twarc in action</a>). <strong>But this is only the last week or so of information!</strong> You can save this information to a file instead of your terminal window by typing the following command into the terminal:</p>
+<p><code>$ twarc search electricarchaeo &gt; electricarchaeo.jsonl</code>  (that's a lower case 'L' at the end of <code>.json</code>)</p>
+<p>If you then right-click on the 'jupyter' logo at the top of the screen and open the link in a new window, you'll be back at the File Explorer. One of the files listed will be the new <code>electricarchaeo.jsonl</code> file you made.</p>
+<p><img alt="Image showing the full JSON file in jupyter of eletric archaeo's tweets" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539306896907-33928.png" /></p>
+<p>So what can we do with this information? Quite a lot, but for now, let's make a basic word cloud of the text of the tweets.</p>
+<p>We're going to need some utilities that Ed Summer has written, some extra python programs that can work with this information. Navigate to the terminal window and type the command <code>$ git clone https://github.com/DocNow/twarc</code>.</p>
+<p>This tells the <code>git</code> program that's already installed to go to GitHub and get the source code for Twarc. One of the folders it is going to grab is called <code>utils</code> and that has the utility program for making a word cloud that we will use.</p>
+<p>We will now type in the location and name of the program we want to use, followed by the data to operate on, followed by the name of the output file we want to create. Type <code>$ twarc/utils/wordcloud.py electricarchaeo.jsonl &gt; wordcloud.html</code> into the terminal.</p>
+<p>Notice that when you press enter, nothing seems to happen. Go back to the list of files (right-click the jupyter logo and select <code>Open in new tab</code>) and one of the files listed will be <code>wordcloud.html</code>. Click on that file.</p>
+<p><img alt="Image showing the created word cloud from the JSON data" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539307355837-46159.png" /></p>
+<p>(If you reload the page, the word-cloud will regenerate, different colours, positions)</p>
+<h3 id="download-the-data-you-collected">Download the data you collected.</h3>
+<p>Once this virtual computer shuts down, all of that data you collected will be lost. Click on the jupyter logo, select the files you want to keep, and hit download.</p>
+<p><img alt="Image showing the jupyter binder, saying to check the box next to the jsonl file and click the button labelled download. Note the file may be large" src="http://www.screencast-o-matic.com/screenshots/u/e7i1/1539307991802-92070.png" /></p>
+<p>Depending on your browser, you might get a warning, asking if you're sure you want to download. Click Yes/OK.</p>
+<h3 id="other-things-you-could-do">Other things you could do</h3>
+<p>Descriptions of what the other utilities do can be found on the <a href="https://github.com/DocNow/twarc">Twarc GitHub repository</a>.</p>
+<p>Go, play! Once you've got that <code>jsonl</code> file, you could convert it to <code>csv</code> and then import it into a spreadsheet tool like Excel of Google Sheets. The <a href="https://json-csv.com/">JSON to CSV website</a> can also do that conversion for you. <strong>Warning:</strong> there is a 1MB limit for using the JSON to CSV tool. If your data is too big, we'll find something else &mdash; perhaps a bit of code or a utility that we can use on the command line (ex. read <a href="https://medium.com/@gabrielpires/how-to-convert-a-json-file-to-csv-python-script-a9ff0a3f906e">Gabriel Pires' Medium article on using Python to convert JSON to CSV</a>). </p>
+<p>With a bit of effort, you can make a network graph of who responds to who. Or explore tweeting by gender. Or map tweets. Or... or... or.</p>
+<p>Probably the easiest thing you could do, once you've converted to <code>csv</code> (again, the <a href="https://json-csv.com/">JSON to CSV website can do this</a>), is to copy the column of tweet text itself into a tool like <a href="http://voyant-tools.org">Voyant</a>. Why not give that a try? </p>
+<p>What you do really depends on what kinds of questions you're hoping to answer. Now that you have access to the firehose of data that is Twitter, what kinds of things might you like to know? How do people talk about archaeology? How do they talk about Atlantis?</p>
+<h4 id="what-can-you-do-with-this-data">What can you do with this data?</h4>
+<ol>
+<li>
+<p>Examine the Twarc repository, especially its utilities. You could extract the geolocated ones and map them. You could examine the difference between 'male' and 'female' tweeters (and how problematic might that be?). </p>
+</li>
+<li>
+<p>In your CSV, save the text of the posts to a new file and upload it to something like <a href="http://voyant-tools.org">Voyant Tools</a> to visualize trends over time. </p>
+</li>
+<li>
+<p>Google for analysis of Twitter data to get some ideas.</p>
+</li>
+</ol>
+<hr />
+<h2 id="exercise-6-using-tesseract-to-turn-an-image-into-text">Exercise 6: Using Tesseract to turn an image into text</h2>
+<p>We've all used image files like JPGs and PNGs. Images always look the same on whatever machine they are displayed on, because they contain within themselves the complete description of what the 'page' should look like. You're likley familiar with the fact that you cannot select text within an image. When we digitize documents, the image that results only contains the image layer, not the text. </p>
+<p>To turn that image into text, we have to do what's called 'object character recognition', or OCR. An OCR algorithm looks at the pattern of pixels in the image, and maps these against the shapes it 'knows' to be an A, or an a, or a B, or a &amp;, and so on. Cleaner, sharper printing gives better results as do high resolution images free from noise. People who have a lot of material to OCR use some very powerful tools to identify blocks of text within the newspaper page, and then train the machine to identify these, a process beyond us just now (but visit <a href="https://stackoverflow.com/questions/28591117/how-do-i-segment-a-document-using-tesseract-then-output-the-resulting-bounding-b#28640570">this Tesseract q &amp; a on stackoverflow</a> if you're interested).</p>
+<p>In this exercise, you'll:</p>
+<ul>
+<li>Install the Tesseract OCR engine into your DH Box</li>
+<li>Install and use ImageMagick to convert the JPG into TIFF image format</li>
+<li>Use Tesseract to OCR the resulting pages.</li>
+<li>Use Tesseract in R to OCR the resulting pages.</li>
+<li>Compare the resulting OCRd texts.</li>
+</ul>
+<h3 id="converting-images-in-the-command-line">Converting images in the command line</h3>
+<ol>
+<li>
+<p>Begin by making a new directory for this exercise: <code>$ mkdir ocr-test</code>. </p>
+</li>
+<li>
+<p>Type <code>$ cd ocr-test</code> to change directories into ocr-test.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install tesseract-ocr</code> to grab the latest version of Tesseract and install it into your DH Box. Enter your password when the computer asks for it.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install imagemagick</code> to install ImageMagick.</p>
+</li>
+<li>
+<p>Let's convert the first file to TIFF with ImageMagick's convert command</p>
+<pre><code>$ convert -density 300 ~/war-diary/e001518087.jpg -depth 8 -strip -background white -alpha off e001518087.tiff
+</code></pre>
+<p>You want a high density image, which is what the -density and the -depth flags do; the rest of the command formats the image in a way that Tesseract expects to encounter text. This command might take a while. Just wait, be patient.</p>
+</li>
+<li>
+<p>Extract text with <code>$ tesseract e001518087.tiff output.txt</code>. This might also take some time.</p>
+</li>
+<li>
+<p>Download the <code>output.txt</code> file to your own machine via DH Box's filemanager. </p>
+</li>
+<li>
+<p>Open the file with a text editor. </p>
+<p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cIC3vRI6TYM?rel=0" title="Converting an image to text using the command line" frameborder="0" gesture="media" allowfullscreen></iframe>
+<br></p>
+</li>
+</ol>
+<h3 id="converting-images-in-r">Converting images in R</h3>
+<ol>
+<li>
+<p>Now we will convert the file using R. Navigate to RStudio in the DH Box.</p>
+</li>
+<li>
+<p>On the upper left side, click the green plus button &gt; R Script to open a new blank script file.</p>
+</li>
+<li>
+<p>Paste in the following script and save it as <code>ocr</code> in RStudio.</p>
+<pre><code>install.packages('magick')
+install.packages('magrittr')
+install.packages('pdftools')
+install.packages('tesseract')
+library(magick) 
+library(magrittr)
+library(pdftools)
+library(tesseract)
+text &lt;- image_read("~/war-diary/e001518087.jpg") %&gt;% 
+  image_resize("2000") %&gt;% 
+  image_convert(colorspace = 'gray') %&gt;% 
+  image_trim() %&gt;% 
+  image_ocr()
+write.table(text, "~/ocr-test/R.txt")
+</code></pre>
+<p>The above script first installs three packages to RStudio, Magick, Magrittr, and Tesseract. Magick processes the image as high quality; Magrittr uses the symbols <code>%&gt;%</code> as a pipe that forces the values of an expression into the next function (allowing our script to perform it's conversion in steps); Tesseract is the actual OCR engine that converts our image to text. Then the script loads each package. Lastly, the script processes the image, OCRs the text, and writes it to a <code>txt</code> file.</p>
+<p>Before installing any packages in the DH Box RStudio, we need to install some dependencies in the command line. The reason is that since DH Box runs an older version of RStudio, not everything installs as planned compared to the desktop RStudio.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install libcurl4-gnutls-dev</code> in the command line to install the libcurl library (this installs RCurl).</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install libmagick++-dev</code> in the command line to install the libmagick library.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install libtesseract-dev</code> in the command line to install the libtesseract library.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install libleptonica-dev</code> in the command line to install the libleptonic library.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install tesseract-ocr-eng</code> in the command line to install the English Tesseract library.</p>
+</li>
+<li>
+<p>Type <code>$ sudo apt-get install libpoppler-cpp-dev</code> in the command line to install the poppler cpp library.</p>
+</li>
+<li>
+<p>Navigate to RStudio and run each <code>install.packages</code> line in our script. This will take some time.</p>
+</li>
+<li>
+<p>Run each <code>library()</code> line to load the libraries.</p>
+</li>
+<li>
+<p>Run each line up to <code>image_ocr()</code>. This may take some time to complete.</p>
+</li>
+<li>
+<p>Run the last line <code>write.table()</code> to export the OCR to a text file with the same name.</p>
+</li>
+<li>
+<p>Navigate to your file manager and download both the <code>output.txt</code> file and the <code>R.txt</code> file.</p>
+</li>
+<li>
+<p>Compare the two text files in your desktop. How is the OCR in the command line versus within R? Note that they both use Tesseract just with different settings and in different environments. </p>
+<p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2jAmfNdMdpk?rel=0" title="Converting an image to text using RStudio" frameborder="0" gesture="media" allowfullscreen></iframe>
+<br></p>
+</li>
+</ol>
+<h3 id="progressively-converting-our-files-with-tesseract">Progressively converting our files with Tesseract</h3>
+<ol>
+<li>
+<p>Now take a screen shot of both text files (just the text area) and name them <code>output_1.png</code> and <code>R_1.png</code> respectively.</p>
+</li>
+<li>
+<p>Upload both files into DH Box via the File Manager.</p>
+</li>
+<li>
+<p>In the command line, type <code>$ tesseract output_1.png output_1.txt</code>. </p>
+</li>
+<li>
+<p>In RStudio, change the file paths in your script to the following:</p>
+<pre><code>text &lt;- image_read("~/ocr-test/R_1.png") %&gt;% 
+  image_resize("2000") %&gt;% 
+  image_convert(colorspace = 'gray') %&gt;% 
+  image_trim() %&gt;% 
+  image_ocr()
+write.table(text, "~/ocr-test/R_1.txt")
+</code></pre>
+</li>
+<li>
+<p>Run each script line again. Except this time <strong>DO NOT</strong> run the <code>install.packages()</code> lines since we already installed them. Simply load the libraries again and run each line.</p>
+</li>
+<li>
+<p>Navigate to the File Manager and download <code>ouput_1.txt</code> and <code>R_1.txt</code>.</p>
+</li>
+<li>
+<p>Compare these two files. Did the OCR conversion get progressively worse? How do they compare to each other, to the first attempt at conversion, and then to the originals?</p>
+<p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C6QasGX6Ncw?rel=0" title="Converting our images further" frameborder="0" gesture="media" allowfullscreen></iframe>
+<br></p>
+</li>
+<li>
+<p>Choose either the command line or the R method to convert more of the war diary files to text. Save these files into a new directory called <code>war-diary-text</code>. We will use these text files for future work in topic modeling and text analysis. How might your decision on which method to use change the results you would get in, say, a topic modeling tool?</p>
+<p><strong>Hint:</strong> Check below for <a href="#batch-converting-image-files">a way to automate the conversion process</a>.</p>
+<p><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/puUNq1qzFmY?rel=0" title="Converting the war diary files to text using RStudio" frameborder="0" gesture="media" allowfullscreen></iframe>
+<br></p>
+</li>
+</ol>
+<p>Think about how these conversions can change based on the image being run through Tesseract. Does Tesseract have an easier time converting computer text even though it's in an image format? How might OCR conversions affect the way historians work on batch files? How does the context of the text change how historians analyse it? </p>
+<p>Look up the <a href="https://github.com/tesseract-ocr/tesseract/wiki/Command-Line-Usage">Tesseract wiki</a>. What other options could you use with the Tesseract command to improve the results? When you decide to download Tesseract to you own computer, use the following two guides to automating bulk OCR (multiple files) with Tesseract: <a href="https://diging.atlassian.net/wiki/display/DCH/Tutorial%3A+Text+Extraction+and+OCR+with+Tesseract+and+ImageMagick">Peirson's</a> and <a href="http://benschmidt.org/dighist13/?page_id=129">Schmidt's</a>.</p>
+<h3 id="batch-converting-image-files">Batch converting image files</h3>
+<p>Now that you've learned to convert image files to text individually, you should know that there is a quicker way to do this. The following script takes your Canadian war diary <code>jpg</code> image files and OCRs them using the same process as above. However this time, the <code>function(i)</code> (<code>i</code> stands for iterate), goes through the folder for each <code>jpg</code> file and converts them to a <code>png</code> file into a text file with the suffix <code>-ocr.txt</code> until it notes there are no more image files to convert. The converted files will output to the same folder, in our case <code>war-diary</code>. </p>
+<pre><code>    library(magick) 
+    library(magrittr)
+    library(pdftools)
+    library(tesseract)
+
+    dest &lt;- "/war-diary"
+    myfiles &lt;- list.files(path = dest, pattern = "jpg", full.names = TRUE)
+
+    # improve the images
+    # ocr 'em
+    # write the output to text file
+
+    lapply(myfiles, function(i){
+        text &lt;- image_read(i) %&gt;%
+        image_resize("3000x") %&gt;%
+        image_convert(type = 'Grayscale') %&gt;%
+        image_trim(fuzz = 40) %&gt;%
+        image_write(format = 'png', density = '300x300') %&gt;%
+        tesseract::ocr()
+
+    outfile &lt;- paste(i,"-ocr.txt",sep="")
+    cat(text, file=outfile, sep="\n")
+
+    })
+</code></pre>
+<p>You can probably understand now why this method works much better than the previous R script: we automate our process (ie. we run the script just once and it iterates through the folder for us), append a suffix to the txt file name noting the OCRd text, and output it all to the same folder.</p>
+<p>Keep these files somewhere handy on your computer! We will use them throughout the course.</p>
+<p>By iterating through the folder, we have created a loop. Loops can be a very powerful tool for Digital Historians, as we can begin to automate processes that would take much longer by hand. Read more about <a href="https://www.r-bloggers.com/how-to-write-the-first-for-loop-in-r/">'for loops' on the R-blogger website</a>.</p>
+<p><strong>NB</strong> The above script processes dozens of images and may take quite a bit of time to complete. </p>
+<h2 id="reference">Reference</h2>
+<p>Part of this tutorial was adapted from <a href="https://programminghistorian.org">The Programming Historian</a> released under the CC-BY license, including:</p>
+<p>Ian Milligan, "Automated Downloading with Wget," The Programming Historian 1 (2012), <a href="https://programminghistorian.org/lessons/automated-downloading-with-wget">https://programminghistorian.org/lessons/automated-downloading-with-wget</a>.</p>
+<p>Kellen Kurschinski, "Applied Archival Downloading with Wget," The Programming Historian 2 (2013), <a href="https://programminghistorian.org/lessons/applied-archival-downloading-with-wget">https://programminghistorian.org/lessons/applied-archival-downloading-with-wget</a>.</p>
+<p><a href="https://twitter.com/superboreen/status/958418116324790273">Twitter user 'superboreen' on R OCR</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../module-3/Wrangling Data/" class="btn btn-neutral float-right" title="Data is messy">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Finding Data/" class="btn btn-neutral" title="How do we find data?"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/shawngraham/dhworkbook/tree/gh-pages/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Finding Data/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../module-3/Wrangling Data/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
